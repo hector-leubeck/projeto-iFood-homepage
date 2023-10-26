@@ -1,0 +1,17 @@
+:root {
+  --primary-red: #ea1d2c;
+  --primary-white: #ffffff;
+  --medium-gray: #3f3e3e;
+  --lighter-gray: #717171;
+  --darker-gray: #1a1a1a;
+  --primary-gold: #fcbb00;
+  --bg-title: 24px;
+  --md-title: 20px;
+  --bg-text: 16px;
+  --md-text: 14px;
+  --sm-text: 12px;
+  --xs-text: 10px;
+  --bg-spacing: 20px;
+  --md-spacing: 15px;
+  --sm-spacing: 10px;
+}

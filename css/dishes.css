@@ -1,0 +1,46 @@
+@font-face {
+  font-family: "IFood RC Titulos";
+  src: url(../assets/fonts/iFoodRCTitulos-Regular.ttf);
+}
+
+@font-face {
+  font-family: "IFood RC Textos";
+  src: url(../assets/fonts/iFoodRCTextos-Regular.ttf);
+}
+
+main {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 5%;
+}
+
+.dish-card {
+  border: 5px solid var(--primary-red);
+  border-radius: 25px;
+  width: 600px;
+  display: flex;
+}
+
+.dish-label img {
+  margin: 15px 0 0 10px;
+  border-radius: 10px;
+  width: 250px;
+  height: 250px;
+  border: 1px solid var(--lighter-gray);
+  box-shadow: inset 10px 10px var(--primary-white);
+}
+
+.dish-title {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  margin-bottom: var(--sm-spacing);
+}
+
+.dish-tags {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  text-align: center;
+  padding: var(--sm-spacing);
+}

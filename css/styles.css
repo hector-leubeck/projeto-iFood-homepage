@@ -8,50 +8,6 @@
   src: url(../assets/fonts/iFoodRCTextos-Regular.ttf);
 }
 
-body {
-  background-color: var(--primary-white);
-  font-family: "IFood RC Textos";
-}
-main section {
-  margin-bottom: var(--bg-spacing);
-}
-.logo-container {
-  display: flex;
-  background-color: var(--primary-red);
-  height: 150px;
-  align-items: flex-end;
-  justify-content: space-between;
-  padding: 0 20px;
-}
-
-.logo-container img {
-  height: 100px;
-  align-self: center;
-}
-
-.greeting,
-.location {
-  font-family: "IFood RC Titulos";
-  font-size: var(--bg-title);
-  color: var(--primary-white);
-  padding: var(--sm-spacing);
-}
-
-header nav {
-  height: 30px;
-  padding: var(--sm-spacing);
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  border-bottom: 1px solid #dcdcdc;
-}
-
-header nav a {
-  font-family: "Ifood RC Titulos";
-  font-size: var(--bg-text);
-  color: var(--lighter-gray);
-}
-
 .red-link {
   color: var(--primary-red);
 }
@@ -88,6 +44,7 @@ section h2 {
   text-decoration: none;
   margin-top: calc(var(--bg-spacing) * 1.5);
   align-self: center;
+  text-align: center;
 }
 
 .dish-labels-container {
@@ -110,10 +67,12 @@ section h2 {
 .dish-card h4 {
   font-size: var(--md-text);
   margin-top: calc(var(--sm-spacing) / 2);
+  color: var(--primary-red);
 }
 
 .dish-card h5 {
   font-size: var(--xs-text);
+  color: var(--darker-gray);
 }
 
 .dish-card img {

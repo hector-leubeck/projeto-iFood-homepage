@@ -12,6 +12,11 @@
       type="image/x-icon"
     />
     <title>iFood - O maior delivery da America Latina</title>
+    <script>
+      function onSubmit() {
+        alert("Feedback enviado com sucesso!");
+      }
+    </script>
   </head>
   <body>
     <header>
@@ -27,9 +32,9 @@
       </div>
       <nav>
         <a href="#" class="red-link">Início</a>
-        <a href="">Cardápio</a>
-        <a href="">Login</a>
-        <a href="">Fale conosco</a>
+        <a href="#dishes">Cardápio</a>
+        <a href="#dinners">Restaurantes</a>
+        <a href="@contact-us">Fale conosco</a>
       </nav>
     </header>
     <main>
@@ -62,56 +67,247 @@
           </a>
         </div>
       </section>
-      <section class="local-dishes-container">
+      <section class="local-dishes-container" id="dishes">
         <h2>Os melhores pratos proximos a você</h2>
-        <div class="dish-labels-container">
-          <div class="dish-card">
-            <div class="dish-label">
-              <img src="assets/dishes/burger.jpeg" alt="Hamburger Artesanal" />
+        <a href="dishes.html">
+          <div class="dish-labels-container">
+            <div class="dish-card">
+              <div class="dish-label">
+                <img
+                  src="assets/dishes/burger.jpeg"
+                  alt="Hamburger Artesanal"
+                />
+              </div>
+              <h4>X-tudo Artesanal</h4>
+              <h5>Lanches</h5>
             </div>
-            <h4>X-tudo Artesanal</h4>
-            <h5>Lanches</h5>
+            <div class="dish-card">
+              <div class="dish-label">
+                <img
+                  src="assets/dishes/food_porn_tapioca.jpg"
+                  alt="Tapioca Recheada"
+                />
+              </div>
+              <h4>Tapioca Recheada</h4>
+              <h5>Sobremesas</h5>
+            </div>
+            <div class="dish-card">
+              <div class="dish-label">
+                <img src="assets/dishes/Feijoada-receita.jpg" alt="Feijoada" />
+              </div>
+              <h4>Feijoada Completa</h4>
+              <h5>Brasileira</h5>
+            </div>
+            <div class="dish-card">
+              <div class="dish-label">
+                <img
+                  src="assets/dishes/pizza-saborosa-fresca-com-calabresa.avif"
+                  alt="Pizza de Calabresa"
+                />
+              </div>
+              <h4>Pizza de Calabresa</h4>
+              <h5>Pizzas</h5>
+            </div>
+            <div class="dish-card">
+              <div class="dish-label">
+                <img
+                  src="assets/dishes/Strogonoff-carne.jpg"
+                  alt="Strogonoff de Carne"
+                />
+              </div>
+              <h4>Strogonoff de Carne</h4>
+              <h5>Refeições</h5>
+            </div>
           </div>
-          <div class="dish-card">
-            <div class="dish-label">
-              <img
-                src="assets/dishes/food_porn_tapioca.jpg"
-                alt="Tapioca Recheada"
+          <h3 class="see-more">Ver mais</h3></a
+        >
+      </section>
+      <section class="dinners-section" id="dinners">
+        <h2>Os TOPS do iFood!</h2>
+        <a href="dinners.html">
+          <div class="dinners-container">
+            <div class="dinner-card">
+              <div class="dinner-label">
+                <img
+                  src="assets/dinners/arabian-food.png"
+                  alt="Tâmaras e Tahini"
+                />
+              </div>
+              <div class="dinner-title">
+                <h4>Tâmaras & Tahini</h4>
+                <div class="score-container">
+                  <h6>Nota: 3.0</h6>
+                  <h6 class="score">&starf;&starf;&starf;&star;&star;</h6>
+                </div>
+              </div>
+              <h5>
+                "Tâmaras & Tahini: Um oásis gastronômico que combina os sabores
+                autênticos do Oriente Médio em pratos irresistíveis. Experimente
+                o encanto da culinária árabe."
+              </h5>
+            </div>
+            <div class="dinner-card">
+              <div class="dinner-label">
+                <img
+                  src="assets/dinners/coffee-sh.avif"
+                  alt="Cafés & Patinhas"
+                />
+              </div>
+              <div class="dinner-title">
+                <h4>Cafés & Patinhas</h4>
+                <div class="score-container">
+                  <h6>Nota: 4.0</h6>
+                  <h6 class="score">&starf;&starf;&starf;&starf;&star;</h6>
+                </div>
+              </div>
+              <h5>
+                "Café & Patinhas: Um refúgio aconchegante onde você pode
+                desfrutar de sua bebida favorita na companhia de gatos
+                adoráveis, que andam livremente, proporcionando um ambiente
+                relaxante e alegre para os amantes dos felinos. Ronronantes e
+                acolhedores!"
+              </h5>
+            </div>
+            <div class="dinner-card">
+              <div class="dinner-label">
+                <img src="assets/dinners/meow-cupcake.jpg" alt="Miau Gourmet" />
+              </div>
+              <div class="dinner-title">
+                <h4>Miau Gourmet</h4>
+                <div class="score-container">
+                  <h6>Nota: 5.0</h6>
+                  <h6 class="score">&starf;&starf;&starf;&starf;&starf;</h6>
+                </div>
+              </div>
+              <h5>
+                "Miau Gourmet: Nossos bolos e docinhos são obras-primas da alta
+                confeitaria. Cada doce é cuidadosamente elaborado com
+                ingredientes da mais alta qualidade, garantindo uma experiência
+                gastronômica excepcional."
+              </h5>
+            </div>
+            <div class="dinner-card">
+              <div class="dinner-label">
+                <img
+                  src="assets/dinners/pizzaria1.png"
+                  alt="Monarca das Massas"
+                />
+              </div>
+              <div class="dinner-title">
+                <h4>Monarca das Massas</h4>
+                <div class="score-container">
+                  <h6>Nota: 1.0</h6>
+                  <h6 class="score">&starf;&star;&star;&star;&star;</h6>
+                </div>
+              </div>
+              <h5>
+                "Monarca das Massas: O trono da pizza com borda recheada e
+                massas frescas. Uma realeza de sabores que encanta paladares com
+                cada mordida. Sinta-se coroado pelo sabor."
+              </h5>
+            </div>
+            <div class="dinner-card">
+              <div class="dinner-label">
+                <img
+                  src="assets/dinners/sushii.jpg"
+                  alt="Rasengan Rolls & Sashimi"
+                />
+              </div>
+              <div class="dinner-title">
+                <h4>Rasengan Rolls & Sashimi</h4>
+                <div class="score-container">
+                  <h6>Nota: 2.0</h6>
+                  <h6 class="score">&starf;&starf;&star;&star;&star;</h6>
+                </div>
+              </div>
+              <h5>
+                "Rasengan Rolls & Sashimi: Uma explosão de sabores com sushis
+                criativos e sashimis frescos. Entre no mundo da culinária ninja
+                e desfrute de uma experiência gastronômica única."
+              </h5>
+            </div>
+            <div class="dinner-card">
+              <div class="dinner-label">
+                <img src="assets/dinners/burger.jpg" alt="BurgerScript" />
+              </div>
+              <div class="dinner-title">
+                <h4>BurgerScript</h4>
+                <div class="score-container">
+                  <h6>Nota: 4.0</h6>
+                  <h6 class="score">&starf;&starf;&starf;&starf;&star;</h6>
+                </div>
+              </div>
+              <h5>
+                function BurgerScript(Burger, Fries) => {O código-fonte da
+                satisfação! Desenvolvemos hambúrgueres com o estilo CSS mais
+                crocante e a interatividade do JavaScript. Uma experiência
+                front-end irresistível!}
+              </h5>
+            </div>
+          </div>
+          <h3 class="see-more">Ver mais</h3></a
+        >
+      </section>
+      <section class="contact-us" id="contact-us">
+        <h2>Nos envie sua mensagem!</h2>
+        <form onsubmit="onSubmit()" class="contact-form">
+          <div class="personal-infos">
+            <div class="name">
+              <label id="name-label" for="name-input">Nome:</label>
+              <input
+                id="name-input"
+                type="text"
+                name="name"
+                autocomplete="name"
+                placeholder="Digite seu Nome completo"
+                required
               />
             </div>
-            <h4>Tapioca Recheada</h4>
-            <h5>Sobremesas</h5>
-          </div>
-          <div class="dish-card">
-            <div class="dish-label">
-              <img src="assets/dishes/Feijoada-receita.jpg" alt="Feijoada" />
-            </div>
-            <h4>Feijoada Completa</h4>
-            <h5>Brasileira</h5>
-          </div>
-          <div class="dish-card">
-            <div class="dish-label">
-              <img
-                src="assets/dishes/pizza-saborosa-fresca-com-calabresa.avif"
-                alt="Pizza de Calabresa"
+            <div class="mail">
+              <label for="email">E-mail:</label>
+              <input
+                type="email"
+                name="mail"
+                id="email"
+                autocomplete="email"
+                placeholder="exemplo@exemplo.com.br"
+                required
               />
             </div>
-            <h4>Pizza de Calabresa</h4>
-            <h5>Pizzas</h5>
           </div>
-          <div class="dish-card">
-            <div class="dish-label">
-              <img
-                src="assets/dishes/Strogonoff-carne.jpg"
-                alt="Strogonoff de Carne"
+          <div class="message">
+            <label for="msg">Sua Mensagem</label>
+            <textarea
+              name="msg"
+              id="msg"
+              placeholder="Digite aqui sua mensagem"
+              required
+            ></textarea>
+            <div class="form-buttons-container">
+              <input class="form-button" type="reset" value="Limpar dados" />
+              <input
+                class="form-button"
+                type="submit"
+                value="Enviar pergunta"
               />
             </div>
-            <h4>Strogonoff de Carne</h4>
-            <h5>Refeições</h5>
           </div>
-        </div>
-        <a href="http://"></a>
+        </form>
       </section>
     </main>
+    <footer>
+      <div class="contact">
+        <h3 class="symbol">&#128222;</h3>
+        <h3>(00) 0000-0000</h3>
+      </div>
+      <div class="contact">
+        <h3 class="symbol">&#128231;</h3>
+        <h3>ada@ifood.com.br</h3>
+      </div>
+      <div class="contact">
+        <h3 class="symbol">&#127963;</h3>
+        <h3>Fictícia, 123 - Centro - São Paulo</h3>
+      </div>
+    </footer>
   </body>
 </html>

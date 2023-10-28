@@ -216,27 +216,6 @@ label {
   transform: scale(1.05) rotate(-1deg);
 }
 
-footer {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  height: 150px;
-  gap: var(--md-spacing);
-}
-
-.contact {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: var(--bg-text);
-  gap: var(--sm-spacing);
-}
-
-.symbol {
-  font-size: var(--bg-title);
-}
-
 @media (max-width: 850px) {
   .promos-container {
     flex-flow: column wrap;
@@ -244,11 +223,6 @@ footer {
 }
 
 @media (max-width: 680px) {
-  .greeting,
-  .location {
-    font-size: var(--md-title);
-  }
-
   .dish-labels-container {
     flex-wrap: wrap;
     gap: var(--sm-spacing);
@@ -265,10 +239,6 @@ footer {
 }
 
 @media (max-width: 500px) {
-  .greeting,
-  .location {
-    font-size: var(--md-text);
-  }
   .promos-container img {
     width: 200px;
   }
@@ -282,15 +252,6 @@ footer {
 }
 
 @media (max-width: 380px) {
-  header nav {
-    height: 80px;
-    display: flex;
-    flex-flow: column wrap;
-  }
-  .logo-container img {
-    height: 50px;
-  }
-
   .contact-us {
     height: 450px;
   }
@@ -301,17 +262,6 @@ footer {
 }
 
 @media (max-width: 275px) {
-  header nav {
-    height: 80px;
-    display: flex;
-    flex-flow: column wrap;
-  }
-  .logo-container img {
-    height: 30px;
-    align-self: flex-start;
-    margin-top: var(--md-spacing);
-  }
-
   .personal-infos {
     width: 150px;
   }

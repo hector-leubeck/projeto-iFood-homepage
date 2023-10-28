@@ -8,10 +8,6 @@
   src: url(../assets/fonts/iFoodRCTextos-Regular.ttf);
 }
 
-.red-link {
-  color: var(--primary-red);
-}
-
 section h2 {
   font-family: "IFood RC Titulos";
   margin: var(--md-spacing);

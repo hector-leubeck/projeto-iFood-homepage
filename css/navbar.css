@@ -41,7 +41,7 @@ header nav {
   height: 30px;
   padding: var(--sm-spacing);
   display: flex;
-  justify-content: space-around;
+  justify-content: baseline;
   align-items: center;
   border-bottom: 1px solid #dcdcdc;
 }
@@ -49,7 +49,12 @@ header nav {
 header nav a {
   font-family: "Ifood RC Titulos";
   font-size: var(--bg-text);
+  padding-left: var(--sm-spacing);
   color: var(--lighter-gray);
+}
+
+.red-link {
+  color: var(--primary-red);
 }
 
 footer {

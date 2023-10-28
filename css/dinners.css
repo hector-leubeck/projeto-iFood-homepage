@@ -1,0 +1,87 @@
+@font-face {
+  font-family: "IFood RC Titulos";
+  src: url(../assets/fonts/iFoodRCTitulos-Regular.ttf);
+}
+
+@font-face {
+  font-family: "IFood RC Textos";
+  src: url(../assets/fonts/iFoodRCTextos-Regular.ttf);
+}
+
+main {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.dinner-card {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  border: 8px solid var(--primary-red);
+  border-radius: 25px;
+  padding: var(--md-spacing);
+  justify-content: space-between;
+  margin: var(--md-spacing);
+}
+
+.dinner-label img {
+  width: 350px;
+  height: 350px;
+  box-sizing: border-box;
+  padding: 2px;
+}
+
+.dinner-card h4 {
+  text-align: center;
+  font-family: "IFood RC Titulos";
+  font-weight: bold;
+  font-size: var(--md-title);
+  margin-top: var(--sm-spacing);
+  color: var(--primary-red);
+}
+
+.dinner-card h5 {
+  text-align: center;
+  font-size: var(--md-text);
+  margin-top: var(--sm-spacing);
+  color: var(--darker-gray);
+}
+
+.dinner-title {
+  display: flex;
+  justify-content: center;
+}
+
+.score-container {
+  display: flex;
+  flex-flow: column wrap;
+  margin-left: var(--sm-spacing);
+}
+
+.score-container h6 {
+  color: var(--primary-gold);
+  font-size: var(--sm-text);
+}
+
+.score {
+  color: var(--primary-gold);
+  font-size: var(--xs-text);
+}
+
+@media (max-width: 500px) {
+  .dinner-card {
+    width: 250px;
+    padding: var(--sm-spacing);
+    margin: var(--sm-spacing);
+  }
+
+  .dinner-label {
+    justify-content: center;
+  }
+  .dinner-label img {
+    width: 200px;
+    height: 200px;
+  }
+}
